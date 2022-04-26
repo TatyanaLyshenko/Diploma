@@ -1,0 +1,87 @@
+.intro {
+    background: url('../images/bg_servises_page.png') no-repeat center center;
+    background-size: cover;
+    padding-top: 167px;
+    &__line {
+        display: block;
+        text-align: center;
+        max-width: 861px;
+        margin: 0 auto;
+        .btn-blue {
+            margin: 40px 0 80px;
+            @media (max-width: 768px) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    &__title {
+        font-size: 42px;
+        line-height: 50px;
+        font-weight: 500;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &__text {
+        @include fonts(21px,#ffffff,30px);
+    }
+    
+    .modal-header {
+        padding: 0;
+        border: none;
+    }
+    #exampleModal.modal.fade.show {
+        background: #323264;
+        @media (max-width: 576px) {
+            background: #fff;
+        }
+        
+    }
+    .modal-dialog {
+        margin: 197px auto 0;
+        @media (max-width: 576px) {
+            margin: 0;
+        }
+    
+    } 
+    .modal-content {
+        border: none;
+        border-radius: 12px;
+    }
+
+    &__services {
+        max-width: 1092px;
+        margin: 0 auto;
+        border-top: 4px solid #FFFFFF;
+        opacity: 0.5;
+    }
+    &__subtitle {
+        @include fonts(24px,#ffffff,28px);
+        margin: 20px 0;
+    }
+    &__list-wrapper {
+        padding-bottom: 100px;
+    }
+    &__item {
+        position: relative;
+        @include fonts(18px,#ffffff,26px);
+        margin-bottom: 15px;
+        margin-left:10px;
+        padding-left: 14px;
+     
+        &::before {
+            position: absolute;
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: #F0145A;
+            border-radius: 50%;
+            display: block;
+            top: 10px;
+            left: 0;
+        }
+    }  
+}
